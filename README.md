@@ -59,6 +59,12 @@ Create a project based on the template:
 cookiecutter https://github.com/radema/datascience-personal-templates
 ```
 
+Activate the new environment
+
+```bash
+conda activate {{cookiecutter.environment_name}}
+```
+
 ## Resources and references
 
 - [khuyetran1401/data-sciente-template repository](https://github.com/khuyentran1401/data-science-template/blob/dvc-poetry/README.md)
