@@ -13,7 +13,10 @@ initialize-git:
 	git add .
 	git commit -m "Setup project"
 
-setup: activate-env initialize-git
+pre-commit-install:
+	@echo "Installing pre commit"
+
+setup: activate-env initialize-git pre-commit-install
 
 ## Delete all compiled Python files
 clean:
