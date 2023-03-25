@@ -1,4 +1,4 @@
-name: datascience_template
+name: {{environment-name}}
 channels:
   - conda-forge
   - defaults
