@@ -16,6 +16,7 @@ initialize-git:
 pre-commit-install:
 	@echo "Installing pre commit"
 	pre-commit install
+	@echo "Test"
 
 setup: activate-env initialize-git pre-commit-install
 
