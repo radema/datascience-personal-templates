@@ -12,7 +12,7 @@ It has been built to be easy and quick to use. For 'industrial' or more 'busines
 
 [ ] Run Tests automatically
 
-[ ] Enforce hints and quality code
+[x] Enforce hints and quality code
 
 [ ] Automatically Document Code
 
@@ -21,6 +21,7 @@ It has been built to be easy and quick to use. For 'industrial' or more 'busines
 ## Tools used
 
 - Conda
+- pre-commit
 
 ## Template Structure
 
