@@ -6,7 +6,6 @@ CONDA_ACTIVATE = source $$(conda info --base)/etc/profile.d/conda.sh ; conda act
 activate-env:
 	@echo "Activating virtual environment ..."
 	conda env update --prune -f config/environment.yml
-	$(CONDA_ACTIVATE) {{cookiecutter.environment_name}}
 
 initialize-git:
 	@echo "Initializing Git..."
@@ -16,7 +15,7 @@ initialize-git:
 
 pre-commit-install:
 	@echo "Installing pre commit"
-	pre-commit install
+	$(CONDA_ACTIVATE) {{cookiecutter.environment_name}}; pre-commit install
 
 setup: activate-env initialize-git pre-commit-install
 
