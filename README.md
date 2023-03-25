@@ -1,17 +1,25 @@
 # Data Science Project Template
 
-## Why should be used
+This template has been built after reading the [Medium article by khuyetran1401](https://towardsdatascience.com/how-to-structure-an-ml-project-for-reproducibility-and-maintainability-54d5e53b4c82?sk=c3d05ae5b8ccc95822618d0dacfad8a4).
+It would be much simpler to just fork its repo but I prefer to build it by myself to understand each component.
+It has been built to be easy and quick to use. For 'industrial' or more 'business' projects, I still prefer tools like Kedro.
 
-TBD
+## Features and Roadmap
+
+[x] Automatically build repository structure for DS personal projects 
+[x] Create and Build an environment using conda
+[ ] Run Tests automatically
+[ ] Enforce hints and quality code
+[ ] Automatically Document Code
+[ ] Automate Code
 
 ## Tools used
 
 - Conda
 
-
 ## Template Structure
 
-repository                       # Parent directory of the template
+.
 ├── config                       # Project configuration files
 │   ├──environment.yml           # Environment file for conda
 ├── data                         # Local project data (not committed to version control)
