@@ -11,6 +11,8 @@ activate-env:
 initialize-git:
 	@echo "Initializing Git..."
 	git init
+	git add .
+	git commit -m "Setup project"
 
 setup: activate-env initialize-git
 
