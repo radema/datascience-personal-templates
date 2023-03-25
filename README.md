@@ -6,11 +6,16 @@ It has been built to be easy and quick to use. For 'industrial' or more 'busines
 
 ## Features and Roadmap
 
-[x] Automatically build repository structure for DS personal projects 
+[x] Automatically build repository structure for DS personal projects
+
 [x] Create and Build an environment using conda
+
 [ ] Run Tests automatically
+
 [ ] Enforce hints and quality code
+
 [ ] Automatically Document Code
+
 [ ] Automate Code
 
 ## Tools used
@@ -19,6 +24,7 @@ It has been built to be easy and quick to use. For 'industrial' or more 'busines
 
 ## Template Structure
 
+```bash
 .
 ├── config                       # Project configuration files
 │   ├──environment.yml           # Environment file for conda
@@ -37,8 +43,21 @@ It has been built to be easy and quick to use. For 'industrial' or more 'busines
 ├── setup.cfg                    # Configuration options for tools e.g. `pytest` or `flake8`
 └── src                          # Project source code
     └── main.py
+```
 
 ## How to use this template
+
+Install Cookiecutter:
+
+```bash
+pip install cookiecutter
+```
+
+Create a project based on the template:
+
+```bash
+cookiecutter https://github.com/radema/datascience-personal-templates
+```
 
 ## Resources and references
 
