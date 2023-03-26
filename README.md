@@ -14,6 +14,8 @@ For 'industrial' or more 'business' projects, I still prefer tools like [Kedro](
 
 :black_square_button: Run Tests automatically
 
+:black_square_button: Manage configuration variables for data pipelines and projects
+
 :white_check_mark: Enforce hints and quality code
 
 :black_square_button: Automatically Document Code
