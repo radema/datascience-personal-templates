@@ -44,8 +44,6 @@ For 'industrial' or more 'business' projects, I still prefer tools like [Kedro](
 ├── models                       # Project configuration files
 ├── notebooks                    # Project related Jupyter notebooks (used for experimental code before moving code to src)
 ├── README.md                    # Project README
-├── requirements.txt
-├── setup.cfg                    # Configuration options for tools e.g. `pytest` or `flake8`
 └── src                          # Project source code
     └── main.py
 ```
