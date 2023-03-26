@@ -2,26 +2,28 @@
 
 This template has been built after reading the [Medium article by khuyetran1401](https://towardsdatascience.com/how-to-structure-an-ml-project-for-reproducibility-and-maintainability-54d5e53b4c82?sk=c3d05ae5b8ccc95822618d0dacfad8a4).
 It would be much simpler to just fork its repo but I prefer to build it by myself to understand each component.
-It has been built to be easy and quick to use. For 'industrial' or more 'business' projects, I still prefer tools like Kedro.
+It has been built to be easy and quick to use. 
+
+For 'industrial' or more 'business' projects, I still prefer tools like [Kedro](https://docs.kedro.org/en/stable/).
 
 ## Features and Roadmap
 
-[x] Automatically build repository structure for DS personal projects
+:white_check_mark: Automatically build repository structure for DS personal projects
 
-[x] Create and Build an environment using conda
+:white_check_mark: Create and Build an environment using conda
 
-[ ] Run Tests automatically
+:black_square_button: Run Tests automatically
 
-[x] Enforce hints and quality code
+:white_check_mark: Enforce hints and quality code
 
-[ ] Automatically Document Code
+:black_square_button: Automatically Document Code
 
-[ ] Automate Code
+:black_square_button: Automate Code
 
 ## Tools used
 
-- Conda
-- pre-commit
+- [Conda](https://docs.conda.io/en/latest/): Package, dependency and environment management
+- [pre-commit](https://pre-commit.com/): framework for managing and maintaining multi-language pre-commit hooks. 
 
 ## Template Structure
 
@@ -38,7 +40,7 @@ It has been built to be easy and quick to use. For 'industrial' or more 'busines
 │   ├── 06_reporting             # Ad hoc descriptive cuts
 ├── docs                         # Project documentation
 ├── models                       # Project configuration files
-├── notebooks                    # Project related Jupyter notebooks (can be used for experimental code before moving the code to src)
+├── notebooks                    # Project related Jupyter notebooks (used for experimental code before moving code to src)
 ├── README.md                    # Project README
 ├── requirements.txt
 ├── setup.cfg                    # Configuration options for tools e.g. `pytest` or `flake8`
@@ -64,6 +66,12 @@ Activate the new environment
 
 ```bash
 conda activate {{cookiecutter.environment_name}}
+```
+
+Execute setup in terminal
+
+```bash
+cd {{cookiecutter.repository-name}}; make setup
 ```
 
 ## Resources and references
