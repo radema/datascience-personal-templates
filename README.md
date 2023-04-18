@@ -22,6 +22,9 @@ For 'industrial' or more 'business' projects, I still prefer tools like [Kedro](
 
 :black_square_button: Automate Code
 
+### To Do
+- Add ipykernel to environment file
+
 ## Tools used
 
 - [Conda](https://docs.conda.io/en/latest/): Package, dependency and environment management
