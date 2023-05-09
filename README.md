@@ -22,6 +22,8 @@ For 'industrial' or more 'business' projects, I still prefer tools like [Kedro](
 
 :black_square_button: Automate Code
 
+:white_check_mark: [DVC](https://dvc.org/doc/start) for Data Management and Experiment Management
+
 ### To Do
 - Add ipykernel to environment file
 
