@@ -25,7 +25,7 @@ For 'industrial' or more 'business' projects, I still prefer tools like [Kedro](
 :white_check_mark: [DVC](https://dvc.org/doc/start) for Data Management and Experiment Management
 
 ### To Do
-- Add ipykernel to environment file
+- Automate setup of dvc repo and .gitignore
 
 ## Tools used
 
