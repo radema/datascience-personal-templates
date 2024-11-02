@@ -1,4 +1,4 @@
-initialize-git:
+initialize_git:
 	@echo "Initializing Git..."
 	git init
 	git add .
