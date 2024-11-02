@@ -1,23 +1,19 @@
-.ONESHELL:
-
-SHELL = /bin/zsh
-CONDA_ACTIVATE = source $$(conda info --base)/etc/profile.d/conda.sh ; conda activate ; conda activate
-
-activate-env:
-	@echo "Activating virtual environment ..."
-	conda env update --prune -f config/environment.yml
-
 initialize-git:
 	@echo "Initializing Git..."
 	git init
 	git add .
 	git commit -m "Setup project"
 
-pre-commit-install:
-	@echo "Installing pre commit"
-	$(CONDA_ACTIVATE) {{cookiecutter.environment_name}}; pre-commit install
+install:
+	@echo "Installing..."
+	poetry install
+	poetry run pre-commit install
 
-setup: activate-env initialize-git pre-commit-install
+activate:
+	@echo "Activating virtual environment"
+	poetry shell
+
+setup: initialize_git install
 
 ## Delete all compiled Python files
 clean:
