@@ -67,16 +67,15 @@ Create a project based on the template:
 cookiecutter https://github.com/radema/datascience-personal-templates
 ```
 
-Activate the new environment
-
+Set up the environment:
 ```bash
-conda activate {{cookiecutter.environment_name}}
+make setup
+make activate
 ```
 
-Execute setup in terminal
-
+To install new PyPI packages, run:
 ```bash
-cd {{cookiecutter.repository-name}}; make setup
+poetry add <package-name>
 ```
 
 ## Resources and references
