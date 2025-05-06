@@ -2,9 +2,9 @@
 name = "{{cookiecutter.project_name.lower().replace(' ', '_')}}"
 version = "0.1.0"
 description = "Data science template built with uv"
-authors = [{
-    name = "{{cookiecutter.author_name}}"
-    }]
+authors = [
+    { name = "{{cookiecutter.author_name}}" }
+    ]
 dependencies = [
     "black",
     "flake8",
@@ -22,7 +22,9 @@ dependencies = [
     "jupyter",
     "rich",
     "loguru",
-    "git"
+    "setuptools",
+    "databricks-connect>=13.3.0",
+    "pyspark>=3.5.0"
 ]
 
 [tool.uv]
