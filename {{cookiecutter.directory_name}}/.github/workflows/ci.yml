@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        shell: bash -l {0} 
+        shell: bash -l {0}
 
     steps:
     - name: 🧾 Checkout Repository
@@ -26,9 +26,10 @@ jobs:
       run: |
         uv venv
         uv pip install -e .
+        pip install pytest
+        pip install pre-commit  # Add this line to ensure pre-commit is installed
         pre-commit install
     - name: Run Pre-commit
       run: pre-commit run --all-files
     - name: Run Tests
       run: pytest tests/
-
