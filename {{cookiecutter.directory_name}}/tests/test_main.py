@@ -1,7 +1,8 @@
 """Unit tests for the main module."""
+import os
 import sys
 
-sys.path.append("../src")  # Adjust the path to your src directory
+sys.path.append(os.path.join(os.path.dirname(__file__), "../src"))
 
 
 def test_main_runs():
