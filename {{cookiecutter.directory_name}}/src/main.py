@@ -1,4 +1,4 @@
-from logging_utils import setup_logger
+from .logging_utils import setup_logger
 
 log = setup_logger()
 
